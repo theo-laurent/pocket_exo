@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pocket_exo/static/css/main.4abc5e2c.chunk.css",
+    "main.css": "/pocket_exo/static/css/main.0998e435.chunk.css",
     "main.js": "/pocket_exo/static/js/main.e137debe.chunk.js",
     "main.js.map": "/pocket_exo/static/js/main.e137debe.chunk.js.map",
     "runtime-main.js": "/pocket_exo/static/js/runtime-main.99f6b6e4.js",
@@ -10,14 +10,14 @@
     "static/js/2.4c09b9ff.chunk.js.map": "/pocket_exo/static/js/2.4c09b9ff.chunk.js.map",
     "index.html": "/pocket_exo/index.html",
     "static/css/2.6c0f60ba.chunk.css.map": "/pocket_exo/static/css/2.6c0f60ba.chunk.css.map",
-    "static/css/main.4abc5e2c.chunk.css.map": "/pocket_exo/static/css/main.4abc5e2c.chunk.css.map",
+    "static/css/main.0998e435.chunk.css.map": "/pocket_exo/static/css/main.0998e435.chunk.css.map",
     "static/js/2.4c09b9ff.chunk.js.LICENSE.txt": "/pocket_exo/static/js/2.4c09b9ff.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.99f6b6e4.js",
     "static/css/2.6c0f60ba.chunk.css",
     "static/js/2.4c09b9ff.chunk.js",
-    "static/css/main.4abc5e2c.chunk.css",
+    "static/css/main.0998e435.chunk.css",
     "static/js/main.e137debe.chunk.js"
   ]
 }
