@@ -41,3 +41,20 @@
   margin-left: 15px;
   color: grey;
 }
+
+@media screen and (max-width: 1000px) {
+  .moviePopular__card {
+    width: 125px;
+    height: 250px;
+  }
+
+  .moviePopular__card img {
+    height: 50%;
+    object-fit: cover;
+  }
+
+  .moviePopular__card h3 {
+    margin-top: 5px;
+    font-size: 15px;
+  }
+}

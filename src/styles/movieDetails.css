@@ -29,6 +29,7 @@
 }
 
 .containerMovieDetails__infos img {
+  max-width: 400px;
   border-radius: 30px;
   padding: 20px;
 }
@@ -73,4 +74,34 @@
 
 .liNone {
   list-style: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .containerMovieDetails {
+    height: 700px;
+  }
+  .containerMovieDetails__infos {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .containerMovieDetails__infos img {
+    width: 80px;
+    padding-bottom: 0;
+  }
+
+  .containerMovieDetails__infos__txt {
+    margin-left: 0;
+    padding: 15px;
+    padding-top: 0;
+  }
+
+  .containerMovieDetails__infos__txt h2 {
+    margin: 0;
+  }
+
+  .divGraphique {
+    height: 70px;
+  }
 }

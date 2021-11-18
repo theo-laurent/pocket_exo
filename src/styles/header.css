@@ -40,3 +40,13 @@
   background: #05b9da;
   color: black;
 }
+
+@media screen and (max-width: 1000px) {
+  .header__input {
+    width: 200px;
+  }
+
+  .header__btn {
+    width: 100px;
+  }
+}
