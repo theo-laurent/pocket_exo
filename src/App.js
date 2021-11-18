@@ -10,14 +10,16 @@ import { useState } from "react";
 
 function App() {
   // state pour détailler le film cliqué au sein de MovieDetails
-  const [movieId, setMovieId] = useState("522402");
+  const [movieId, setMovieId] = useState(55555);
   // state pour faire apparaitre la section recherche avec le mot tapé en barre de recherche
   const [movieSearch, setMovieSearch] = useState();
+
+  console.log(movieId);
 
   return (
     <div className="App">
       <Header setMovieSearch={setMovieSearch} />
-      <MovieDetails movieId={movieId} />
+      <MovieDetails movieId={movieId} setMovieId={setMovieId}/>
       <MovieSearch movieSearch={movieSearch} setMovieId={setMovieId} />
       <MoviePopular setMovieId={setMovieId} />
     </div>

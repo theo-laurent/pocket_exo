@@ -27,7 +27,8 @@ export default function MovieDetails(props) {
     },
     [props.movieId]
   );
-  if (movieSolo) {
+
+  if (movieSolo != null) {
     // variables pour faciliter la lecture provenant de l'API
     let img = "https://image.tmdb.org/t/p/w500/" + movieSolo.poster_path;
     let titre = movieSolo.title;

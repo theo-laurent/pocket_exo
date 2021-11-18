@@ -17,8 +17,8 @@ export default function MoviePopular(props) {
         return res.json();
       })
       .then(function (data) {
-        setMovies(data.results);
         props.setMovieId(data.results[0].id);
+        setMovies(data.results);
       })
       .catch(function (error) {
         return error;

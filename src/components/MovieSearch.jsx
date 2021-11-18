@@ -8,6 +8,10 @@ export default function MovieSearch(props) {
     day: "numeric",
   };
 
+  if (props.movieSearch) {
+    props.setMovieId(props.movieSearch[0].id);
+  }
+
   return (
     <div>
       {props.movieSearch ? (
