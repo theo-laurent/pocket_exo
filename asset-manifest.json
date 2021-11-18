@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/pocket_exo/static/css/main.d5beed0a.chunk.css",
-    "main.js": "/pocket_exo/static/js/main.53fbcf9f.chunk.js",
-    "main.js.map": "/pocket_exo/static/js/main.53fbcf9f.chunk.js.map",
+    "main.css": "/pocket_exo/static/css/main.247244f1.chunk.css",
+    "main.js": "/pocket_exo/static/js/main.ca488c2e.chunk.js",
+    "main.js.map": "/pocket_exo/static/js/main.ca488c2e.chunk.js.map",
     "runtime-main.js": "/pocket_exo/static/js/runtime-main.99f6b6e4.js",
     "runtime-main.js.map": "/pocket_exo/static/js/runtime-main.99f6b6e4.js.map",
     "static/css/2.6c0f60ba.chunk.css": "/pocket_exo/static/css/2.6c0f60ba.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.4c09b9ff.chunk.js.map": "/pocket_exo/static/js/2.4c09b9ff.chunk.js.map",
     "index.html": "/pocket_exo/index.html",
     "static/css/2.6c0f60ba.chunk.css.map": "/pocket_exo/static/css/2.6c0f60ba.chunk.css.map",
-    "static/css/main.d5beed0a.chunk.css.map": "/pocket_exo/static/css/main.d5beed0a.chunk.css.map",
+    "static/css/main.247244f1.chunk.css.map": "/pocket_exo/static/css/main.247244f1.chunk.css.map",
     "static/js/2.4c09b9ff.chunk.js.LICENSE.txt": "/pocket_exo/static/js/2.4c09b9ff.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.99f6b6e4.js",
     "static/css/2.6c0f60ba.chunk.css",
     "static/js/2.4c09b9ff.chunk.js",
-    "static/css/main.d5beed0a.chunk.css",
-    "static/js/main.53fbcf9f.chunk.js"
+    "static/css/main.247244f1.chunk.css",
+    "static/js/main.ca488c2e.chunk.js"
   ]
 }
