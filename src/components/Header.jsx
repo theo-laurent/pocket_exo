@@ -7,7 +7,7 @@ export default function Header(props) {
 
   function search() {
     fetch(
-      `https://api.themoviedb.org/3/search/movie/?query=${searchMovie}&language=fr&api_key=d4dfced817985d414b727774821c9678`,
+      `https://api.themoviedb.org/3/search/movie/?query=${searchMovie}&api_key=d4dfced817985d414b727774821c9678&language=fr`,
       { method: "GET" }
     )
       .then(function (res) {
