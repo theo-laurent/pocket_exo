@@ -12,7 +12,7 @@ export default function MovieDetails(props) {
   useEffect(
     function () {
       fetch(
-        `https://api.themoviedb.org/3/movie/${props.movieId}?language=fr&api_key=d4dfced817985d414b727774821c9678`,
+        `https://api.themoviedb.org/3/movie/${props.movieId}?api_key=d4dfced817985d414b727774821c9678&language=fr`,
         { method: "GET" }
       )
         .then(function (res) {
