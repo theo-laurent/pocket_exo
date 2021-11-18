@@ -49,7 +49,7 @@ export default function MovieDetails(props) {
         <div
           className="containerMovieDetails__background"
           style={{
-            background: `url(${img})`,
+            backgroundImage: ` url(${img})`,
           }}
         ></div>
 
