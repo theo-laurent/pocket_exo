@@ -30,3 +30,8 @@
   font-weight: 600;
   cursor: pointer;
 }
+
+.header__btn:hover {
+  background: #05b9da;
+  color: black;
+}

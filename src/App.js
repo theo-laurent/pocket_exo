@@ -14,8 +14,6 @@ function App() {
   // state pour faire apparaitre la section recherche avec le mot tapé en barre de recherche
   const [movieSearch, setMovieSearch] = useState();
 
-  console.log(movieId);
-
   return (
     <div className="App">
       <Header setMovieSearch={setMovieSearch} />
