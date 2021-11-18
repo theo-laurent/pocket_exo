@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 // import uuidv4 pour générer des clés uniques
 import { v4 as uuidv4 } from "uuid";
 
-export default function MoviePopular() {
+export default function MoviePopular(props) {
   const [movies, setMovies] = useState([]);
 
   useEffect(function () {
@@ -25,22 +25,21 @@ export default function MoviePopular() {
   }, []);
 
   movies.splice(5, 15);
-  console.log(movies);
-
-  // options date
+  
+  /* options date
   const options = {
     weekday: "long",
     year: "numeric",
     month: "long",
     day: "numeric",
-  };
+  }*/
 
   return (
     <div className="containerMoviePopular">
       <h1>Films populaires</h1>
       <div className="moviePopular">
         {movies.map((movie) => (
-          <div className="moviePopular__card" key={uuidv4()}>
+          <div className="moviePopular__card" key={uuidv4()} onClick={()=> props.setMovieId(movie.id)}>
             <img
               src={"https://image.tmdb.org/t/p/w500/" + movie.poster_path}
               alt=""
