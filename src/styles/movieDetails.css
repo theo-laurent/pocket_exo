@@ -16,6 +16,7 @@
   height: 100%;
   border-radius: 20px;
   filter: brightness(10%);
+  background-size: 150px;
 }
 
 .containerMovieDetails__infos {
