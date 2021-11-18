@@ -11,7 +11,7 @@ export default function Header() {
         name="headerSearch"
       />
 
-      <button for="headerSearch" className="header__btn">
+      <button htmlFor="headerSearch" className="header__btn">
         Rechercher
       </button>
     </div>
