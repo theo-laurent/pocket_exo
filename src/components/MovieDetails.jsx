@@ -27,15 +27,12 @@ export default function MovieDetails(props) {
     },
     [props.movieId]
   );
-
-  console.log(movieSolo);
-
   if (movieSolo) {
     // variables pour faciliter la lecture provenant de l'API
     let img = "https://image.tmdb.org/t/p/w500/" + movieSolo.poster_path;
     let titre = movieSolo.title;
-    let date = movieSolo.release_date;
-    let dateFr = new Date(date).toLocaleDateString();
+    let année = ` (${new Date(movieSolo.release_date).getFullYear()})`;
+    let dateFr = new Date(movieSolo.release_date).toLocaleDateString();
     let genres = movieSolo.genres.map((element) => {
       return element.name + ", ";
     });
@@ -58,7 +55,11 @@ export default function MovieDetails(props) {
         <div className="containerMovieDetails__infos">
           <img src={img} alt="" />
           <div className="containerMovieDetails__infos__txt">
-            <h1>{titre}</h1>
+            <div className="containerMovieDetails__infos__title">
+              <h1>{titre}</h1>
+              <p>{année}</p>
+            </div>
+
             <ul>
               <li className="liNone">{dateFr}</li>
               <li>{genres}</li>
@@ -66,7 +67,7 @@ export default function MovieDetails(props) {
             </ul>
 
             <div className="divGraphique">
-              <div style={{ width: 80 }}>
+              <div style={{ width: 70 }}>
                 <CircularProgressbar
                   value={note}
                   text={note + "%"}

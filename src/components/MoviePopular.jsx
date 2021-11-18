@@ -18,6 +18,7 @@ export default function MoviePopular(props) {
       })
       .then(function (data) {
         setMovies(data.results);
+        props.setMovieId(data.results[0].id);
       })
       .catch(function (error) {
         return error;
@@ -25,27 +26,37 @@ export default function MoviePopular(props) {
   }, []);
 
   movies.splice(5, 15);
-  
-  /* options date
+
   const options = {
-    weekday: "long",
     year: "numeric",
-    month: "long",
+    month: "short",
     day: "numeric",
-  }*/
+  };
 
   return (
     <div className="containerMoviePopular">
       <h1>Films populaires</h1>
       <div className="moviePopular">
         {movies.map((movie) => (
-          <div className="moviePopular__card" key={uuidv4()} onClick={()=> props.setMovieId(movie.id)}>
+          <div
+            className="moviePopular__card"
+            key={uuidv4()}
+            onClick={function () {
+              window.scrollTo(1000, 0);
+              props.setMovieId(movie.id);
+            }}
+          >
             <img
               src={"https://image.tmdb.org/t/p/w500/" + movie.poster_path}
               alt=""
             />
             <h3>{movie.title}</h3>
-            <p>{movie.release_date}</p>
+            <p>
+              {new Date(movie.release_date).toLocaleDateString(
+                "fr-FR",
+                options
+              )}
+            </p>
           </div>
         ))}
       </div>
