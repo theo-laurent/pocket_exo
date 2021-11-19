@@ -29,7 +29,7 @@ export default function MovieDetails(props) {
   );
 
   if (movieSolo != null) {
-    // variables pour faciliter la lecture provenant de l'API
+    // on créé des variables provenant de notre fetch pour construire plus lisiblement notre return JSX
     let img = "https://image.tmdb.org/t/p/w500/" + movieSolo.poster_path;
     let titre = movieSolo.title;
     let année = ` (${new Date(movieSolo.release_date).getFullYear()})`;

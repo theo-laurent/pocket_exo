@@ -8,6 +8,7 @@ import { v4 as uuidv4 } from "uuid";
 export default function MoviePopular(props) {
   const [movies, setMovies] = useState([]);
 
+  // on fetch sur une Api pour recupérer les films les plus populaires
   useEffect(function () {
     fetch(
       "https://api.themoviedb.org/3/movie/popular/?api_key=d4dfced817985d414b727774821c9678&language=frd .",
@@ -17,7 +18,9 @@ export default function MoviePopular(props) {
         return res.json();
       })
       .then(function (data) {
+        // on transmet le premier de ces films en props pour le mettre en détail
         props.setMovieId(data.results[0].id);
+        // on enregistre les données de ces films dans notre variable movies
         setMovies(data.results);
       })
       .catch(function (error) {
@@ -25,6 +28,7 @@ export default function MoviePopular(props) {
       });
   }, []);
 
+  // on ne garde que les 5 premiers films de notre array movies
   movies.splice(5, 15);
 
   const options = {

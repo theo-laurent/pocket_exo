@@ -5,6 +5,11 @@ import "../styles/header.css";
 export default function Header(props) {
   const [searchMovie, setSearchMovie] = useState("");
 
+  // si l'input renvoie une string égale à 0 on renvoie null pour le component App puis MovieSearch
+  if (searchMovie.length === 0) {
+    props.setMovieSearch(null);
+  }
+  // on fetch sur les caractères indiqués dans l'input
   function search() {
     fetch(
       `https://api.themoviedb.org/3/search/movie/?query=${searchMovie}&api_key=d4dfced817985d414b727774821c9678&language=fr`,
@@ -14,6 +19,7 @@ export default function Header(props) {
         return res.json();
       })
       .then(function (data) {
+        // on transmet les données en props pour le component App puis MovieSearch
         props.setMovieSearch(data.results);
       })
       .catch(function (error) {
