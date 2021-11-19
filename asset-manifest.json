@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/pocket_exo/static/css/main.7b2faa3e.chunk.css",
-    "main.js": "/pocket_exo/static/js/main.655ab428.chunk.js",
-    "main.js.map": "/pocket_exo/static/js/main.655ab428.chunk.js.map",
+    "main.css": "/pocket_exo/static/css/main.7115a7e1.chunk.css",
+    "main.js": "/pocket_exo/static/js/main.2c37317f.chunk.js",
+    "main.js.map": "/pocket_exo/static/js/main.2c37317f.chunk.js.map",
     "runtime-main.js": "/pocket_exo/static/js/runtime-main.99f6b6e4.js",
     "runtime-main.js.map": "/pocket_exo/static/js/runtime-main.99f6b6e4.js.map",
     "static/css/2.6c0f60ba.chunk.css": "/pocket_exo/static/css/2.6c0f60ba.chunk.css",
-    "static/js/2.4c09b9ff.chunk.js": "/pocket_exo/static/js/2.4c09b9ff.chunk.js",
-    "static/js/2.4c09b9ff.chunk.js.map": "/pocket_exo/static/js/2.4c09b9ff.chunk.js.map",
+    "static/js/2.5da0cc59.chunk.js": "/pocket_exo/static/js/2.5da0cc59.chunk.js",
+    "static/js/2.5da0cc59.chunk.js.map": "/pocket_exo/static/js/2.5da0cc59.chunk.js.map",
     "index.html": "/pocket_exo/index.html",
     "static/css/2.6c0f60ba.chunk.css.map": "/pocket_exo/static/css/2.6c0f60ba.chunk.css.map",
-    "static/css/main.7b2faa3e.chunk.css.map": "/pocket_exo/static/css/main.7b2faa3e.chunk.css.map",
-    "static/js/2.4c09b9ff.chunk.js.LICENSE.txt": "/pocket_exo/static/js/2.4c09b9ff.chunk.js.LICENSE.txt"
+    "static/css/main.7115a7e1.chunk.css.map": "/pocket_exo/static/css/main.7115a7e1.chunk.css.map",
+    "static/js/2.5da0cc59.chunk.js.LICENSE.txt": "/pocket_exo/static/js/2.5da0cc59.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.99f6b6e4.js",
     "static/css/2.6c0f60ba.chunk.css",
-    "static/js/2.4c09b9ff.chunk.js",
-    "static/css/main.7b2faa3e.chunk.css",
-    "static/js/main.655ab428.chunk.js"
+    "static/js/2.5da0cc59.chunk.js",
+    "static/css/main.7115a7e1.chunk.css",
+    "static/js/main.2c37317f.chunk.js"
   ]
 }
