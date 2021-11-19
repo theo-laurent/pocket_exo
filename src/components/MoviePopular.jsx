@@ -17,7 +17,7 @@ export default function MoviePopular(props) {
   useEffect(
     function () {
       fetch(
-        "https://api.themoviedb.org/3/movie/popular/?api_key=d4dfced817985d414b727774821c9678&language=frd .",
+        "https://api.themoviedb.org/3/movie/popular/?api_key=d4dfced817985d414b727774821c9678&language=fr",
         { method: "GET" }
       )
         .then(function (res) {

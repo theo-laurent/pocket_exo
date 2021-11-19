@@ -15,7 +15,7 @@ export default function Header(props) {
   // on fetch sur les caractères indiqués dans l'input
   function search() {
     fetch(
-      `https://api.themoviedb.org/3/search/movie/?query=${searchMovie}&api_key=d4dfced817985d414b727774821c9678&language=fr`,
+      `https://api.themoviedb.org/3/search/movie/?api_key=d4dfced817985d414b727774821c9678&query=${searchMovie}&language=fr`,
       { method: "GET" }
     )
       .then(function (res) {
@@ -41,6 +41,7 @@ export default function Header(props) {
         onChange={(e) => setSearchMovie(e.target.value)}
       />
       <button
+        type="submit"
         onClick={() => search()}
         htmlFor="headerSearch"
         className="header__btn"
