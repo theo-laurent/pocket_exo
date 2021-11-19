@@ -18,7 +18,6 @@ export default function MovieSearch(props) {
   useEffect(
     function () {
       // on change la className CSS pour le 1er film de la liste de recherche
-
       if (props.movieSearch) {
         setClassSpecial(props.movieSearch[0].id);
       }
