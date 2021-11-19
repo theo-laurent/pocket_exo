@@ -1,14 +1,17 @@
 // import css
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../styles/header.css";
 
 export default function Header(props) {
   const [searchMovie, setSearchMovie] = useState("");
 
-  // si l'input renvoie une string égale à 0 on renvoie null pour le component App puis MovieSearch
-  if (searchMovie.length === 0) {
-    props.setMovieSearch(null);
-  }
+  useEffect(function () {
+    // si l'input renvoie une string égale à 0 on renvoie null pour le component App puis MovieSearch
+    if (searchMovie.length === 0) {
+      props.setMovieSearch(null);
+    }
+  });
+
   // on fetch sur les caractères indiqués dans l'input
   function search() {
     fetch(

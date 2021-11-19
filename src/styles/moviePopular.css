@@ -42,6 +42,10 @@
   color: grey;
 }
 
+.moviePopular__card-unfocus {
+  opacity: 0.5;
+}
+
 @media screen and (max-width: 1000px) {
   .moviePopular__card {
     width: 125px;

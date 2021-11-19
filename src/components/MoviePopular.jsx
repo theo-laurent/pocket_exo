@@ -7,9 +7,12 @@ import { v4 as uuidv4 } from "uuid";
 
 export default function MoviePopular(props) {
   const [movies, setMovies] = useState([]);
-
+  // state pour gérer le changement de className css
+  const [classSpecial, setClassSpecial] = useState(0);
+  
   // on fetch sur une Api pour recupérer les films les plus populaires
   useEffect(function () {
+    
     fetch(
       "https://api.themoviedb.org/3/movie/popular/?api_key=d4dfced817985d414b727774821c9678&language=frd .",
       { method: "GET" }
@@ -20,6 +23,8 @@ export default function MoviePopular(props) {
       .then(function (data) {
         // on transmet le premier de ces films en props pour le mettre en détail
         props.setMovieId(data.results[0].id);
+        // on change la className CSS pour le 1er film de la liste
+        setClassSpecial(data.results[0].id);
         // on enregistre les données de ces films dans notre variable movies
         setMovies(data.results);
       })
@@ -43,11 +48,19 @@ export default function MoviePopular(props) {
       <div className="moviePopular">
         {movies.map((movie) => (
           <div
-            className="moviePopular__card"
+            className={
+              movie.id === classSpecial
+                ? "moviePopular__card"
+                : "moviePopular__card moviePopular__card-unfocus"
+            }
             key={uuidv4()}
             onClick={function () {
+              // on remonte l'écran
               window.scrollTo(1000, 0);
+              // on remonte en props l'id du film selectionné
               props.setMovieId(movie.id);
+              // on change la className CSS pour le film selectionné
+              setClassSpecial(movie.id);
             }}
           >
             <img
